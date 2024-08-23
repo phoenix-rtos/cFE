@@ -105,7 +105,7 @@ endif(CFE_EDS_ENABLED_BUILD)
 # Include "cfe_assert" library in all builds, because it is included
 # in the default startup script.  It should not have any effect if not
 # used.
-list(APPEND MISSION_GLOBAL_APPLIST cfe_assert)
+list(APPEND MISSION_GLOBAL_STATIC_APPLIST cfe_assert)
 
 # If ENABLE_UNIT_TEST is enabled, then include the cfe_testcase app
 if (ENABLE_UNIT_TESTS)

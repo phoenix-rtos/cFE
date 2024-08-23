@@ -290,6 +290,9 @@ endif (DEFINED ${TGTNAME}_EMBED_FILELIST)
 
 target_link_libraries(core-${TGTNAME}
     ${MISSION_CORE_INTERFACES}
+    "-Wl,--whole-archive"
+    psp-generic-phoenix
+    "-Wl,--no-whole-archive"
 
     # The following libs should be included whole, even if they
     # do not necessarily resolve any symbols, because they may be needed by apps

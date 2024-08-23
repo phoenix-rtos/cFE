@@ -102,14 +102,14 @@ SET(FT_INSTALL_SUBDIR "host/functional-test")
 SET(MISSION_CPUNAMES cpu1)
 
 SET(cpu1_PROCESSORID 1)
-SET(cpu1_APPLIST ci_lab to_lab sch_lab)
+SET(cpu1_STATIC_APPLIST ci_lab to_lab sch_lab)
 SET(cpu1_FILELIST cfe_es_startup.scr)
-SET(cpu1_SYSTEM i686-linux-gnu)
+SET(cpu1_SYSTEM phoenix)
+set(cpu1_STATIC_SYMLIST CI_LAB_AppMain,ci_lab TO_LAB_AppMain,to_lab SCH_LAB_AppMain,sch_lab)
 
 # CPU2 example.  This is not built by default anymore but
 # serves as an example of how one would configure multiple cpus.
 SET(cpu2_PROCESSORID 2)
-SET(cpu2_APPLIST ci_lab to_lab sch_lab)
+SET(cpu2_STATIC_APPLIST ci_lab to_lab sch_lab)
 SET(cpu2_FILELIST cfe_es_startup.scr)
-SET(cpu2_SYSTEM i686-linux-gnu)
-
+SET(cpu2_SYSTEM phoenix)
